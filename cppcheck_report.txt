@@ -1,0 +1,53 @@
+301/CO_Emergency.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+301/CO_SDOserver.c:1159:9: style: Assignment of function parameter has no effect outside the function. [uselessAssignmentArg]
+        timeDifference_us = 0;
+        ^
+CANopen.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 21 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+example/CO_driver_blank.c:303:22: style: Condition 'overflow!=0' is always false [knownConditionTrueFalse]
+        if (overflow != 0) {
+                     ^
+example/CO_driver_blank.c:331:23: error: Null pointer dereference: rcvMsg [nullPointer]
+        rcvMsgIdent = rcvMsg->ident;
+                      ^
+example/CO_driver_blank.c:330:18: note: Assignment 'rcvMsg=0', assigned value is 0
+        rcvMsg = 0; /* get message from module here */
+                 ^
+example/CO_driver_blank.c:331:23: note: Null pointer dereference
+        rcvMsgIdent = rcvMsg->ident;
+                      ^
+example/OD.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+example/main_blank.c:64:26: style: Variable 'activeNodeId' is assigned a value that is never used. [unreadVariable]
+    uint8_t activeNodeId = 10; /* Copied from CO_pendingNodeId in the communication reset section */
+                         ^
+example/main_blank.c:278:0: style: The function 'CO_CAN1InterruptHandler' is never used. [unusedFunction]
+
+^
+example/CO_driver_blank.c:320:0: style: The function 'CO_CANinterrupt' is never used. [unusedFunction]
+
+^
+CANopen.c:834:0: style: The function 'CO_isLSSslaveEnabled' is never used. [unusedFunction]
+
+^
+CANopen.c:1444:0: style: The function 'CO_process_RPDO' is never used. [unusedFunction]
+
+^
+CANopen.c:1409:0: style: The function 'CO_process_SYNC' is never used. [unusedFunction]
+
+^
+CANopen.c:1472:0: style: The function 'CO_process_TPDO' is never used. [unusedFunction]
+
+^
+301/CO_ODinterface.c:332:0: style: The function 'OD_getPtr' is never used. [unusedFunction]
+
+^
+example/main_blank.c:251:0: style: The function 'tmrTask_thread' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
